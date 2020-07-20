@@ -14,5 +14,13 @@ namespace ListORama.Models
         public string firstName { get; set; }
         public string lastName { get; set; }
         public int password { get; set; }
+
+        public string fullName
+        {
+            get
+            {
+                return (lastName + ", " + firstName);
+            }
+        }
     }
 }
